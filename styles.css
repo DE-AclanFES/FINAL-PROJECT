@@ -97,6 +97,11 @@ figure {
 
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 .btn {
     margin-top: 32px;
     background-color: #6415ff;
@@ -335,6 +340,12 @@ STEPS
 
 */
 
+#steps .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .steps__img--wrapper,
 .steps__description {
     width: 50%;
@@ -470,4 +481,192 @@ VALUES
 PRICING
 
 */
+
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .section__para {
+    max-width: 576px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.plan__1 .plan__stripe, .plan__1 .plan__btn{
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__stripe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan__1, .plan__3 {
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 32px;
+    background-color: rgb(255 255 255);
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 32px;
+    padding-top: 8px;
+    text-align: center;
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__2 {
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 32px;
+    padding-top: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-transform: uppercase;
+    line-height: 1.625;
+}
+
+.plan__mid {
+    margin-left: -32px;
+    margin-right: -32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding: 32px;
+}
+
+.plan__bottom {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.plan__btn {
+    border-radius: 0.25px;
+    background-color: rgb(100 21 255);
+    padding: 12px 32px;
+    font-weight: 700;
+    color: rgb(247 250 252);
+    transition: all 300ms ease;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    cursor: pointer;
+    border: none;
+}
+
+.plan__btn:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;      
+}
+
+.plan__btn--primary:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;      
+}
+
+.plan__name, .plan__price, .plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.plan__name {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.plan__duration {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.plan__target {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.plan__features {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan__feature {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.plan__2 {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan__btn--primary {
+    border-radius: 0.25px;
+    background-color: #f7fafc;
+    padding: 12px 32px;
+    font-weight: 700;
+    color: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    transition: all 300ms ease;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    cursor: pointer;
+    border: none;
+}
+
+.plan__3 .plan__stripe, .plan__3 .plan__btn {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
 
