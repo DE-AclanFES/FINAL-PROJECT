@@ -116,6 +116,15 @@ p {
     transition: all 300ms ease;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
+section {
+    padding: 0 32px;
+}
+
 .section__tag {
     font-size: 16px;
     color: #6415ff;
@@ -502,7 +511,6 @@ PRICING
 }
 
 .plan__1 .plan__stripe, .plan__1 .plan__btn{
-    color: #f7fafc;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
@@ -518,11 +526,12 @@ PRICING
 
 .plan__1, .plan__3 {
     position: relative;
+    overflow: hidden;
     margin-top: 64px;
     display: flex;
     width: 100%;
     flex-direction: column;
-    border-radius: 32px;
+    border-radius: 8px;
     background-color: rgb(255 255 255);
     padding-left: 32px;
     padding-right: 32px;
@@ -539,13 +548,14 @@ PRICING
     display: flex;
     width: 100%;
     flex-direction: column;
-    border-radius: 32px;
+    border-radius: 8px;
     padding-left: 32px;
     padding-right: 32px;
     margin-right: 32px;
     padding-top: 8px;
     text-align: center;
     color: white;
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
@@ -630,6 +640,37 @@ PRICING
     letter-spacing: 1px;
 }
 
+.plan__name--primary, .plan__price--primary, .plan__duration--primary {
+    font-weight: bold;
+    line-height: 1.625;
+    color:#f7fafc;
+}
+
+.plan__name--primary {
+    font-size: 20px;
+    color:#f7fafc;
+}
+
+.plan__price--primary {
+    font-size: 48px;
+    margin: 4px 0;
+    color:#f7fafc;
+}
+
+.plan__duration--primary {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#f7fafc;
+}
+
+.plan__target--primary {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color:#f7fafc;
+}
+
 .plan__features {
     margin-top: 16px;
     display: flex;
@@ -643,8 +684,11 @@ PRICING
     margin-top: 12px;
 }
 
-.plan__2 {
-    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+.plan__feature--primary {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color:#f7fafc;
 }
 
 .plan__btn--primary {
@@ -666,7 +710,126 @@ PRICING
 }
 
 .plan__3 .plan__stripe, .plan__3 .plan__btn {
-    color: #f7fafc;
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    overflow: hidden;
 }
 
+/* 
+
+TESTIMONIALS 
+
+*/
+
+#testimonials .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.testimonial__description,
+.testimonial__img {
+    width: 50%;
+}
+
+.testimonial__description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+}
+
+#testimonials .section__title{
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
+
+.testimonial {
+    margin-top: 40px;
+}
+
+.testimonial__rating {
+    color: rgba(246, 173, 85);
+    margin-right: 2px;
+    margin-top: 4px;
+}
+
+.testimonial__title {
+    color: #4a5568;
+    line-height: 1.625;
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonial__para {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.625;
+    font-size: 16px;
+    color: rgb(74 85 104);
+}
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial__client {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__client--img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonial__client--info {
+    margin-left: 24px;
+}
+
+.testimonial__client--name {
+    color: #4a5568;
+    line-height: 1.625;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonial__client--title {
+    color: #7c8ba1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.testimonial__btns {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #edf2f7;
+    border-radius: 50%;
+    margin: 0 12px;
+    transition: all 300ms ease;
+}
+
+
+.testimonial__btn:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+.divider {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-right-width: 1px;
+    width: 0.5px;
+    background-color: #edf2f7;
+    height: 20px;
+}
