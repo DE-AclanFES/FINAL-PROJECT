@@ -6,7 +6,7 @@
     <title>FINAL PROJECT</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/06af7bd5ec.js" crossorigin="anonymous"></script>
-    
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -25,6 +25,35 @@
                     <a href="#" class="nav__link">Login</a>
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                 </div>   
+            
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Pricing</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Contact Us</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Login</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Sign Up</a>
+                    </li>
+                </ul>
+                </div>
             </div>
         </nav>
         <header>
@@ -339,10 +368,75 @@
         <section id="start">
             <div class="container">
                 <div class="row">
+                    <div class="start__container">
+                        <div class="start__row">
+                            <div class="start__title">
+                                Developers all over the world are happily using Treact.
+                            </div>
+                            <div class="start__btns">
+                               <button class="start__btn btn">Get Started</button>
+                               <button class="start__btn btn">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <div class="footer__columns">
+                   <div class="footer__column">
+                    <div class="footer__column--title">MAIN</div>
+                        <a href="#" class="footer__link">Blog</a>
+                        <a href="#" class="footer__link">FAQs</a>
+                        <a href="#" class="footer__link">Support</a>
+                        <a href="#" class="footer__link">About Us</a>
+                    </div>
+                    <div class="footer__column">
+                    <div class="footer__column--title">PRODUCT</div>
+                        <a href="#" class="footer__link">Log In</a>
+                        <a href="#" class="footer__link">Personal</a>
+                        <a href="#" class="footer__link">Business</a>
+                        <a href="#" class="footer__link">Team</a>
+                        </div>
+                    <div class="footer__column">
+                        <div class="footer__column--title">PRESS</div>
+                        <a href="#" class="footer__link">Logos</a>
+                        <a href="#" class="footer__link">Events</a>
+                        <a href="#" class="footer__link">Stories</a>
+                        <a href="#" class="footer__link">Office</a>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column--title">TEAM</div>
+                        <a href="#" class="footer__link">Career</a>
+                        <a href="#" class="footer__link">Founders</a>
+                        <a href="#" class="footer__link">Culture</a>      
+                        <a href="#" class="footer__link">Onboarding</a>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column--title">LEGAL</div>
+                        <a href="#" class="footer__link">GDPR</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Terms of Service</a>                            
+                        <a href="#" class="footer__link">Disclaimer</a>
+                    </div>
+                </div>
+                <div class="footer__divider"></div>
+                <div class="footer__bottom">
+                    <div class="footer__logo">
+                        <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="logo" class="footer__logo--img">
+                        <div class="footer__logo--title">Treact Inc.</div>
+                    </div>
+                <div class="footer__copyright">&copy; 2026 Treact Inc. All rights reserved.</div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social--link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social--link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="footer__social--link"><i class="fa-brands fa-youtube"></i></a> 
+               </div>   
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
