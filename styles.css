@@ -1418,11 +1418,11 @@ MOBILE RESPONSIVENESS
     margin-left: 0;
     margin-top: 8px;
   }
-  .testimonials__img {
+  .testimonials__client--img {
     height: 64px;
     width: 64px;
   }
-  .testimonials__btn {
+  .testimonials__btns {
     margin-top: 32px;
   }
   .start__title {
